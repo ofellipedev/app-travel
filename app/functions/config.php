@@ -18,3 +18,17 @@ function countUsers() {
   $count = $sql->rowCount();
   return $count;
 }
+
+function allCardUser($id) {
+  $pdo = db_connect();
+  $sql = $pdo->query("SELECT * FROM cards WHERE id_user = $id");
+  $cards = $sql->fetchAll(PDO::FETCH_ASSOC);
+  return $cards;
+}
+
+function searchUserID($id){
+  $pdo = db_connect();
+  $sql = $pdo->query("SELECT * FROM users WHERE id_user = $id");
+  $user = $sql->fetch(PDO::FETCH_ASSOC);
+  return $user;
+}

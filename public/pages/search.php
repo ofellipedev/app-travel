@@ -1,6 +1,6 @@
 <?php
   require ("../../vendor/autoload.php");
-  $countUsers = countUsers();
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -128,7 +128,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="search.php" class="nav-link">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-search"></i>
               <p>Consulta</p>
             </a>
@@ -181,64 +181,24 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="container-fluid">
-        <!-- Small boxes (Stat box) -->
-        <div class="row">
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3><?php echo $countUsers; ?></h3>
-
-                <p>Usuários Cadastrados</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-bag"></i>
-              </div>
-              <a href="allUsers.php" class="small-box-footer">Mais informações <i class="fas fa-arrow-circle-right"></i></a>
+        <div class="container-fluid">
+            <h2 class="text-center display-4">Prucurar</h2>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <form action="form/search_action.php" method="GET">
+                        <div class="input-group">
+                            <input type="search" class="form-control form-control-lg" name="search" placeholder="Digite o nome do usuário aqui">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-lg btn-default">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-success">
-              <div class="inner">
-                <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-                <p>Novos Usuários hoje</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-person-add"></i>
-              </div>
-              <a href="#" class="small-box-footer">Mais informações <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-warning">
-              <div class="inner">
-                <h3>44</h3>
-                <p>Cartões Fidelidade Ativos</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-stats-bars"></i>
-              </div>
-              <a href="#" class="small-box-footer">Mais informações <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-          </div>
-          <!-- ./col -->
         </div>
-        <!-- /.row -->
-        <!-- Main row -->
-
-        <!-- /.row (main row) -->
-      </div><!-- /.container-fluid -->
     </section>
-    <!-- /.content -->
-  </div>
-
-
 
   <!-- /.content-wrapper -->
   <footer class="main-footer">

@@ -123,35 +123,43 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="home.php" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Dashboard
+              </p>
+            </a>
+          </li>
           <li class="nav-header">Usuários</li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
-              <p>Cadastro</p>
+            <a href="create_user.php" class="nav-link">
+              <i class="ion ion-person-add nav-icon"></i>
+              <p>Novo Cadastro</p>
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
+              <i class="nav-icon fas fa-search"></i>
               <p>Consulta</p>
             </a>
           </li>
           <li class="nav-header">Cartão Fidelidade</li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
+              <i class="nav-icon fas fa-edit"></i>
               <p>Incluir Pontos</p>
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
+              <i class="nav-icon fas fa-search"></i>
               <p>Consulta</p>
             </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="far fa-dot-circle nav-icon"></i>
+              <i class="nav-icon fas fa-book"></i>
               <p>Novo Cartão</p>
             </a>
           </li>
@@ -219,9 +227,9 @@
                     <?php foreach($users as $user): ?>
                     <tr>
                       <td><?= $user['id_user']; ?></td>
-                      <td><?= $user['name']; ?></td>
-                      <td><?= $user['email']; ?></td>
-                      <td><?= $user['birth_date']; ?></td>
+                      <td><?= $user['name_user']; ?></td>
+                      <td><?= $user['email_user']; ?></td>
+                      <td><?= $user['birth_date_user']; ?></td>
                     </tr>
                     <?php endforeach; ?>
                   </tbody>

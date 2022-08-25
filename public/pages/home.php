@@ -218,8 +218,8 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>44</h3>
-                <p>Cartões Fidelidade Ativos</p>
+                <h3>1</h3>
+                <p>Aniversariantes hoje</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>

@@ -113,7 +113,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="home.php" class="nav-link active">
+            <a href="home.php" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Dashboard
@@ -128,7 +128,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-search"></i>
               <p>Consulta</p>
             </a>
@@ -167,11 +167,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
+            <h1 class="m-0">Consulta</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item active"><a href="home.php">Dashboard</a></li>
+              <li class="breadcrumb-item active"><a href="home.php">Usuários</a></li>
+              <li class="breadcrumb-item"><a href="home.php">Consulta</a></li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -199,7 +200,7 @@
             </div>
         </div>
     </section>
-
+  </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <strong>Copyright &copy; 2022 <a href="https://2dsystems.net" target="black">2D Systems</a>.</strong>

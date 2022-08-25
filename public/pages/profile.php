@@ -57,12 +57,6 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
-      </li>
     </ul>
 
     <!-- Right navbar links -->
@@ -151,7 +145,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="search.php" class="nav-link active">
               <i class="nav-icon fas fa-search"></i>
               <p>Consulta</p>
             </a>
@@ -190,12 +184,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Profile</h1>
+            <h1>Perfil</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">User Profile</li>
+              <li class="breadcrumb-item"><a href="#">Usuários</a></li>
+              <li class="breadcrumb-item active">Perfil</li>
             </ol>
           </div>
         </div>
@@ -230,39 +224,52 @@
                   </li>
                 </ul>
 
-                <a href="#" class="btn btn-primary btn-block"><b>Editar</b></a>
-                <a href="form/new_card.php?id_user=<?= $user['id_user']; ?>" class="btn btn-primary btn-block"><b>Novo Cartão</b></a>
+                <a href="#" class="btn btn-warning btn-block"><b>Editar cadastro</b></a>
+                <a href="form/new_card.php?id_user=<?= $user['id_user']; ?>" class="btn btn-success btn-block"><b>Novo Cartão</b></a>
               </div>
               <!-- /.card-body -->
             </div>
             <!-- /.card -->
           </div>
           <!-- /.col -->
+
+        <!-- /.row -->
+ 
           <div class="col-md-9">
-            <div class="card-body table-responsive p-0">
+            <div class="card">
+              <div class="card-header">                  
+                  <span>Cartão Fidelidade</span>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body table-responsive p-0">
                 <table class="table table-hover text-nowrap">
                   <thead>
                     <tr>
-                      <th>Cartão</th>
-                      <th>Criado</th>
-                      <th>Expira</th>
+                      <th>ID Card</th>
+                      <th>Cadastro</th>
+                      <th>Expiração</th>
                       <th>Status</th>
                     </tr>
                   </thead>
                   <tbody>
                     <?php foreach($cards as $card): ?>
-                      <tr>
-                        <td><?= $card['id_card']; ?></td>
-                      </tr>
+                    <tr>
+                      <td><?= $card['id_card']; ?></td>
+                      <td><?= $card['creation_date']; ?></td>
+                      <td><?= $card['expiration_date']; ?></td>
+                      <td></td>
+                      <td><a href="#" class="btn btn-success">Ver</a></td>
+                    </tr>
                     <?php endforeach; ?>
                   </tbody>
                 </table>
               </div>
-
-            <!-- /.card -->
+              <!-- /.card-body -->
             </div>
-          <!-- /.col -->
+            <!-- /.card -->
           </div>
+
+
         <!-- /.row -->
       </div><!-- /.container-fluid -->
     </section>
@@ -273,10 +280,10 @@
 
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+    <strong>Copyright &copy; 2022 <a href="https://2dystems.net">2D Systems</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.2.0
+      <b>Version</b> 0.5 alpha
     </div>
   </footer>
 

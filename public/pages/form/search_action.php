@@ -131,7 +131,7 @@ if($count === 0) {
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="home.php" class="nav-link active">
+            <a href="home.php" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Dashboard
@@ -146,7 +146,7 @@ if($count === 0) {
             </a>
           </li>
           <li class="nav-item">
-            <a href="search.php" class="nav-link">
+            <a href="search.php" class="nav-link active">
               <i class="nav-icon fas fa-search"></i>
               <p>Consulta</p>
             </a>
@@ -189,8 +189,8 @@ if($count === 0) {
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Simple Tables</li>
+              <li class="breadcrumb-item"><a href="#">Usuários</a></li>
+              <li class="breadcrumb-item active">Consulta</li>
             </ol>
           </div>
         </div>
